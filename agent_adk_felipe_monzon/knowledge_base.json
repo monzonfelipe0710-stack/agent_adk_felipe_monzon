@@ -1,0 +1,109 @@
+{
+  "entries": [
+    {
+      "title": "Agente de inteligencia artificial",
+      "keywords": [
+        "agente",
+        "ia",
+        "llm",
+        "herramientas",
+        "tools",
+        "razonamiento"
+      ],
+      "content": "Un agente de IA es un sistema de software que usa un modelo para alcanzar objetivos y completar tareas. Puede interpretar solicitudes, decidir qué herramienta necesita, solicitar su ejecución y utilizar el resultado para continuar. El modelo no ejecuta por sí mismo la consulta: la aplicación define las herramientas disponibles y sus permisos."
+    },
+    {
+      "title": "Google Agent Development Kit (ADK)",
+      "keywords": [
+        "google",
+        "adk",
+        "framework",
+        "agent",
+        "agente",
+        "python"
+      ],
+      "content": "Google ADK es un framework para desarrollar agentes mediante código. Está pensado para trabajar con Gemini, pero permite utilizar otros proveedores mediante LiteLLM. El agente se define en Python con un modelo, nombre, descripción, instrucciones y herramientas."
+    },
+    {
+      "title": "LiteLLM y Ollama",
+      "keywords": [
+        "litellm",
+        "ollama",
+        "modelo",
+        "local",
+        "proveedor"
+      ],
+      "content": "LiteLLM unifica la comunicación con distintos proveedores de modelos. En el material de clase se configura OLLAMA_API_BASE con http://localhost:11434 y se utiliza LiteLlm con un identificador del proveedor Ollama, por ejemplo ollama_chat/<nombre-del-modelo>. Ollama debe estar activo y el modelo disponible localmente."
+    },
+    {
+      "title": "Herramientas o tools",
+      "keywords": [
+        "tools",
+        "herramientas",
+        "funciones",
+        "web",
+        "buscar"
+      ],
+      "content": "Las herramientas son funciones, programas o conexiones externas que el modelo puede utilizar para consultar datos o ejecutar acciones. Su docstring es importante porque describe al modelo para qué sirve la función y qué argumentos recibe. El modelo decide cuándo solicitar la herramienta; la aplicación controla su ejecución."
+    },
+    {
+      "title": "Cuantización",
+      "keywords": [
+        "cuantizacion",
+        "quantization",
+        "q4",
+        "q8",
+        "int4",
+        "int8"
+      ],
+      "content": "La cuantización reduce la cantidad de bits utilizados para representar los pesos del modelo. En las denominaciones Q, la letra significa Quantized y el número indica aproximadamente los bits por parámetro. Menos bits reducen memoria y ancho de banda, pero pueden afectar la precisión."
+    },
+    {
+      "title": "Precisión FP32, FP16 y BF16",
+      "keywords": [
+        "fp32",
+        "fp16",
+        "bf16",
+        "float",
+        "precision",
+        "bits"
+      ],
+      "content": "Float32 representa números de punto flotante con 32 bits. Float16 utiliza 16 bits. BFloat16 también utiliza 16 bits, pero distribuye esos bits de manera diferente. Una representación con más bits puede ofrecer mayor precisión y consume más memoria."
+    },
+    {
+      "title": "Memoria de los modelos",
+      "keywords": [
+        "memoria",
+        "ram",
+        "vram",
+        "parametros",
+        "7b",
+        "14b",
+        "120b"
+      ],
+      "content": "La letra B en nombres como 7B, 14B o 120B significa billions: miles de millones de parámetros. Como aproximación, la memoria de los pesos se calcula multiplicando la cantidad de parámetros por los bytes utilizados por parámetro. El consumo real también incluye activaciones, contexto y otros tensores."
+    },
+    {
+      "title": "Formato GGUF y llama.cpp",
+      "keywords": [
+        "gguf",
+        "llama.cpp",
+        "formato",
+        "convertir",
+        "q4_k_m"
+      ],
+      "content": "La actividad práctica del material propone descargar un modelo base desde Hugging Face, convertirlo al formato GGUF con las herramientas de llama.cpp, cuantizarlo a 4 bits usando Q4_K_M y probarlo mediante Ollama o LM Studio."
+    },
+    {
+      "title": "Interfaz web ADK",
+      "keywords": [
+        "adk web",
+        "interfaz",
+        "web",
+        "localhost",
+        "8000"
+      ],
+      "content": "El material de clase indica ejecutar adk web para levantar la interfaz web de prueba de ADK, que permite interactuar con el agente desde el navegador en el puerto 8000."
+    }
+  ]
+}

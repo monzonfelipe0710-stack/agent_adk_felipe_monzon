@@ -1,0 +1,4 @@
+google-adk
+litellm==1.105.1
+ddgs
+python-dotenv
